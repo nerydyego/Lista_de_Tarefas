@@ -16,11 +16,13 @@
         </div>
     </div>
     <ul class="task-list">
+        {% for task in tasks %}
         <li class="task-item">
-            <span>Titulo da Tarefa</span>
+            <span><a href="/task/{{task.id}}">{{task.title}}</span>
             <span><i class="fas fa-trash"></i></span>
             <span><i class="fas fa-edit"></i></span>
         </li>
+        {% endfor %}
     </ul>
 </div>
 {% endblock %}

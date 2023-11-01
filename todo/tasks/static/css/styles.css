@@ -42,6 +42,10 @@
 .fas.fa-edit{
     color: green;
 }
+.task-list a {
+    text-decoration: none;
+}
+
 /* Botão de adicionar */
 
 .add-div{
