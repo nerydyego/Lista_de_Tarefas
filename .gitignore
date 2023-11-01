@@ -26,3 +26,8 @@ venvtodo/Include*
 venvtodo/Lib*
 venvtodo/Scripts*
 venvtodo/pyvenv.cfg
+
+# Migrations
+
+# Banco
+todo/*.sqlite3
