@@ -3,7 +3,7 @@
 }
 /* navbar */
 .navbar {
-    border-bottom: 1px solif #333;
+    border-bottom: 1px solid #333;
     margin-bottom: 20px;
 }
 .navbar-nav{
@@ -28,7 +28,7 @@
     font-size: 20px;
     height: 50px;
     padding-top: 10px;
-    border-bottom: 3px dashed #ccc;
+    border-bottom: 1px solid #ccc;
 }
 .fas.fa-trash, .fas.fa-edit{
     cursor: pointer;
@@ -47,6 +47,10 @@
 }
 
 /* Botão de adicionar */
+
+#add-link{
+    text-decoration: none;
+}
 
 .add-div{
     background-color: #3476e2;

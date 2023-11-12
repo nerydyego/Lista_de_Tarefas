@@ -4,15 +4,15 @@
 {% block content %}
 <div class="offset-1 col-10 list-div">
     <h1>Lista de Tarefas</h1>
-    <div class="col-2 add-div">
-        <i class="fas fa-plus"></i> Adicionar Tarefa
-    </div>
+    <a id="add-link" href="newtask/">
+        <div class="col-2 add-div">
+            <i class="fas fa-plus"></i> Adicionar Tarefa
+        </div>
+    </a>
     <div class="col-9 search-div">
-        <div class="input-group">
+        <div class="input-group mb-3">
             <input class="form-control" type="text" id="search" name="search" placeholder="Digite o nome da Tarefa">
-            <div class="input-group-text">
-                <i class="fa-solid fa-magnifying-glass"></i>
-            </div>
+            <button class="btn btn-primary" type="button" id="button-addon2"><i class="fa-solid fa-magnifying-glass"></i></button> 
         </div>
     </div>
     <ul class="task-list">
@@ -20,7 +20,7 @@
         <li class="task-item">
             <span><a href="/task/{{task.id}}">{{task.title}}</span>
             <span><i class="fas fa-trash"></i></span>
-            <span><i class="fas fa-edit"></i></span>
+            <a href="edit/{{task.id}}"><span><i class="fas fa-edit"></i></span></a>
         </li>
         {% endfor %}
     </ul>
